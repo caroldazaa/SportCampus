@@ -1,44 +1,40 @@
-# Requerimientos Funcionales y No Funcionales 
+Requerimientos Funcionales
 
-## Requerimientos Funcionales (RF) 
+- El sistema presenta una interfaz gráfica principal Inicio para la bienvenida y ubicación del usuario.
+- El sistema dispone de un formulario visual estructurado para el inicio de sesión con campos de usuario y contraseña.
+- El sistema provee una vista dedicada con los campos necesarios para el registro de nuevos estudiantes.
+- El sistema permite la navegación entre módulos a través de una barra de menú principal estructurada Inicio, Torneos, Resultados, Programación.
+- El sistema clasifica y muestra visualmente la oferta de torneos separada por disciplinas deportivas.
+- El sistema categoriza las vistas de los torneos según el género Masculino, Femenino, Mixto.
+- El sistema cuenta con una vista de detalle Ver información para mostrar las reglas o especificaciones de cada torneo.
+- El sistema ofrece botones de Llamado a la Acción claramente definidos para iniciar el flujo de inscripción.
+- El sistema incluye una sección gráfica denominada Mis Torneos para listar los eventos en los que el usuario participa.
+- El sistema presenta un módulo visual de Programación diseñado para mostrar el cronograma de encuentros deportivos.
+- El sistema dispone de estructuras de tablas diseñadas para reflejar las posiciones, puntos y clasificaciones de los equipos.
+- El sistema proporciona un entorno de navegación específico y separado para el rol de Administrador.
+- El sistema proporciona una interfaz gráfica exclusiva para el rol de Árbitro.
+- El sistema incluye un espacio en los formularios destinado a solicitar específicamente el correo institucional unilibre.edu.co.
+- El sistema dispone de un campo de texto en la vista de registro para capturar el documento de identidad del usuario.
+- El sistema exhibe botones interactivos enlazados a las redes sociales WhatsApp, Instagram, Facebook para soporte y contacto.
+- El sistema simula visualmente la opción de Cerrar sesión en el menú, permitiendo el retorno a la pantalla de inicio.
+- El sistema muestra la información de los torneos utilizando un diseño basado en tarjetas individuales para facilitar el escaneo visual.
+- El sistema cuenta con botones específicos Ver partido dentro del panel personal para acceder al detalle de un encuentro.
+- El sistema presenta espacios gráficos destinados a emitir notificaciones, avisos importantes o alertas sobre vacantes.
+- El sistema estructura la interfaz de captura de resultados deportivos mediante formularios adaptados para los árbitros.
+- El sistema exhibe un pie de página constante que contiene los derechos de autor y el año de la plataforma.
+- El sistema permite el autocompletado en los campos de credenciales gracias a la estructura semántica de sus formularios.
 
-- El sistema debe permitir el ingreso con usuario y contraseña 
-- El sistema debe enviar un menaje de confirmación al ingreso 
-- El sistema debe alertar sobre las vacantes de cada deporte 
-- El sistema debe corroborar si la información del usuario es correcta 
-- El sistema debe permitir subir datos de usuario cada que sea necesario 
-- El sistema debe contar con un cierre seguro cada vez que se ingresan los resultados del partido 
-- El sistema debe tener un límite de grupos y usuarios por grupos 
-- El sistema debe enviar mensajes con avisos importantes (fecha de inicio, cupos disponibles, deportes de interés etc.) 
-- El sistema debe permitir el registro y validación de usuarios únicamente a través del correo institucional (@unilibre.edu.co) incluyendo funciones de recuperación de contraseña 
-- El sistema debe permitir a los estudiantes inscribirse. en los torneos disponibles de forma individual o grupal verificando disponibilidad de cupos en tiempo real. 
-- El sistema debe permitir al administrador crear torneos, definiendo disciplinas, fechas, horarios, escenarios deportivos y límite de participantes. 
-- El sistema debe permitir a los árbitros ingresar los resultados y novedades de los partidos desde dispositivos móviles inmediatamente después de finalizado el encuentro. 
-- El sistema debe actualizar automáticamente las tablas de posiciones, puntos y clasificación de los equipos una vez se registran los resultados de los partidos. 
-- El sistema debe generar y mostrar el perfil de rendimiento de cada deportista, incluyendo métricas como goles, faltas o puntos ganados según la disciplina. 
-- El sistema debe permitir a los usuarios registrarse con su correo institucional de dominio @unilibre.edu.co y su número de documento de identidad. 
-- El sistema debe generar un proceso donde solo se deba registrar el deporte requerido por el usuario y su nombre completo. 
-- El sistema debe permitir el acceso en el rol de árbitro para que este logre subir los resultados de los torneos desde su dispositivo móvil.
-- El sistema debe mostrar al usuario registrado sus estadísticas individuales de rendimiento diferenciadas por partido y torneo. 
-- El sistema debe enviar automáticamente un correo al usuario ya finalizado su registro en un torneo. 
-- El sistema debe poder actualizar la tabla de resultados una vez que el árbitro confirme el puntaje en el partido. 
-- Los árbitros deben poder cargar los resultados de cada encuentro deportivo del torneo en tiempo real desde cualquier dispositivo 
-- Los estudiantes deben poder visualizar los resultados y progreso 
-- Los usuarios deben poder recibir notificaciones sobre nuevos torneos y progreso 
+Requerimientos No Funcionales
 
---- 
-
-## Requerimientos No Funcionales (RNF) 
-
-- El sistema debe almacenar los datos de usuario  
-- Si el sistema admite a un usuario por error debe eliminarlo 
-- El sistema debe permitir 100 usuarios en línea pero almacenar 300 
-- La interfaz de la plataforma debe adaptarse automáticamente a dispositivos móviles para facilitar el uso de árbitros y estudiantes en escenarios deportivos (UX/UI). 
-- El sistema debe garantizar que el acceso y registro esté limitado exclusivamente a miembros activos de la Universidad Libre filtros mediante de dominio de correo. 
-- El sistema debe verificar y mostrar la disponibilidad de cupos de cada torneo. 
-- El sistema debe mostrarse correctamente desde el inicio de sesión, la inscripción y la tabla de resultados de forma entendible y funcional desde dispositivos móviles y computadoras. 
-- El sistema debe permitir el acceso únicamente a usuarios con correo institucional @unilibre.edu.co 
-- El sistema debe mostrar distintas interfaces según el rol del usuario 
-- El sistema debe ser ágil y no tardar en la inscripción de torneos 
-- Debe tener una interfaz compatible y adaptativa para la versión web y dispositivos móviles 
-- El sistema debe tener una arquitectura la cual permita el crecimiento gradual de funcionalidades básicas a más complejas como recomendaciones personalizadas
+- Diseño Adaptativo: La interfaz debe ajustarse automáticamente y mostrarse de forma correcta en dispositivos móviles, tablets y computadoras de escritorio.
+- Usabilidad en Campo: El tamaño de los botones, las fuentes y los contrastes deben estar optimizados para facilitar su lectura en exteriores.
+- Modularidad del Código: El código del frontend debe estar estructurado en múltiples archivos separados por rol y función para garantizar su mantenibilidad.
+- Navegación Ágil: Las transiciones entre las distintas pantallas estáticas no deben superar los 2 segundos de carga para garantizar inmediatez.
+- Estándares Semánticos: La plataforma debe estar construida respetando los estándares web para una correcta jerarquía de la información.
+- Compatibilidad Multi-Navegador: El sistema visual debe renderizarse correctamente en los navegadores web modernos.
+- Rutas Relativas: La arquitectura de enlaces internos debe usar rutas relativas para asegurar su funcionamiento ininterrumpido en entornos de despliegue estático.
+- Accesibilidad Táctil: Los botones y enlaces deben cumplir con las dimensiones mínimas de diseño táctil para evitar toques accidentales en pantallas de teléfonos móviles.
+- Arquitectura Escalable: El diseño del frontend debe estar preparado para conectarse a un futuro sistema Backend sin requerir un rediseño visual.
+- Eficiencia de Recursos: Las vistas de la plataforma no deben incluir animaciones pesadas o elementos bloqueantes que consuman excesiva memoria.
+- Flujo Optimizado: La arquitectura de la información debe estar diseñada para que un estudiante llegue al botón de inscripción de un torneo en un máximo de 3 clics desde la página principal.
+- Identidad Visual Consistente: La plataforma debe mantener la misma línea gráfica, tipografía y estilo de botones en todas las vistas de los diferentes roles para generar cohesión institucional.
